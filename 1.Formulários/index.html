@@ -6,11 +6,23 @@
     <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <form>
+    <form name="signup" onabort="alert('Formulário Enviado')" method="post" action="#">
         Nome: <input type="text" name="name"><br>
         Idade: <input type="number" name="age"><br>
-        Senha: <input type="password" name="password"><br>
-        <button type="submit">Enviar</button>
+        Senha: <input type="password" name="password"><br>        
+        Range: <input type="range" min="0" max="100" value="10"> <br>
+        Color: <input type="color"> <br>
+        E-mail: <input type="email"> <br>
+        URL: <input type="url"> <br>
+        Date: <input type="date"> <br>
+        Week: <input type="week" name="" id=""> <br>
+        Month: <input type="month"> <br>
+        Check Box: <input type="checkbox"> <br>
+        Radio: <input type="radio"> <br>
+        Hiddne: <input type="hidden"> <br>
+        File: <input type="file" multiple> <br>
+        Searcher: <input type="search"> <br>
+        <button type="submit">Enviar</button> <br>
     </form>
 </body>
 </html>
