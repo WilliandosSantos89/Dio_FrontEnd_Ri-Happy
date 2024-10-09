@@ -12,13 +12,55 @@
 
         label{
             width: 100px;
-            text-align: right;
+            text-align: lef;
             display: inline-block;
             padding-right: 5px;
         }
+
+        fieldset{
+            margin: 15px 0;
+            text-align: left;
+            display: inline-block;
+            border-color: gray;
+        }
     </style>
 <body>
-    <h1>Formulário de Cadastro</h1>
+    <!--O elemento HTML <fieldset> é usado para agrupar elementos, 
+        assim como labels (<label>), dentro de um formulário web. -->
 
+    <h1>Formulário de Cadastro</h1>
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+        <div class="row">
+            <label for="">Nome</label><input type="text" name="" id="">
+            <label for="">E-mail</label><input type="text" name="" id="">
+        </div>
+    
+        <div class="row">
+            <label for="">Profissão</label><input type="text" name="" id="">
+            <label for="">Empresa</label><input type="text" name="" id="">
+        </div>
+    
+        <div class="row">
+            <label for="">Endereço</label><input type="text" name="" id="">
+            <label for="">Número</label><input style="width: 30px;" width="10" type="text" name="" id="">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Informações de Contato</legend>
+        <div class="row">
+            <label for="">Telefone</label><input type="text" name="" id="">
+            <label for="">Celular</label><input type="text" name="" id="">
+        </div>
+
+    <fieldset>
+        <legend>Informações Adicionais</legend>
+        <div class="row">
+            <label for="">Linkedin</label><input type="text" name="" id="">
+            <label for="">Instagram</label><input type="text" name="" id="">
+            <label for="">GitHub</label><input type="text" name="" id="">
+        </div>
+    </fieldset>
 </body>
 </html>
