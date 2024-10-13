@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semântico</title>
+    <style>
+        blockquote{
+            background-color: antiquewhite;
+            border-left: gray 10px solid;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <head>
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+                <li><a href="tel:55555555555">Telefone</a></li>
+            </ul>
+            
+        </nav>
+    </head>
+
+    <main>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+
+        <article>
+            <p>Ésse o artigo pai</p>
+
+            <article>
+                <p>E esse o filho</p>
+                <p>Este artigo foi publicado em <time datetime="2020-01-01">01/01/2020"</time></p>
+                <blockquote cite="http://dio.me"> <!-- //citação de um site.-->
+                    <p>Citação</p>
+                    <q>Citação pequena e já vem com aspas</q>
+                </blockquote>
+            </article>
+        </article>
+
+        <aside></aside> <!-- //assuntos tangenciais.-->
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
