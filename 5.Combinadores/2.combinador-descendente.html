@@ -7,7 +7,25 @@
 
     <style>
 
-        
+        li li {
+            color: royalblue;
+        }
+
+        #lista-01 li {
+            background: hotpink;
+        }
+
+        .fundo-verde li {
+            background: lightgreen;
+        }
+
+        .fundo-azul li {
+            background: lightblue;
+        }
+
+        .fundo-verde #subitem-01 li {
+            color: black;
+        }
 
     </style>
 
@@ -17,7 +35,7 @@
     <ul>
         <li class="fundo-verde" id="lista-01">
             <div>Item 1</div>
-            <ul>
+            <ul id="subitem-01" >
                 <li>Subitem A</li>
                 <li>Subitem B</li>
             </ul>
@@ -25,7 +43,7 @@
 
         <li class="fundo-verde" id="lista-02">
             <div>Item 2</div>
-            <ul>
+            <ul id="subitem-02">
                 <li>Subitem A</li>
                 <li>Subitem B</li>
             </ul>
@@ -33,7 +51,7 @@
 
         <li class="fundo-azul" id="item-03">
             <div>Item 3</div>
-            <ul>
+            <ul id="subitem-03">
                 <li>Subitem A</li>
                 <li>Subitem B</li>
             </ul>
