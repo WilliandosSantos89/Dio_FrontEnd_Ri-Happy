@@ -28,6 +28,43 @@
         #texto-explicativo {
             background: yellow;
         }
+
+        .seletores {
+            background: green;
+        }
+
+        .texto-maiusculo {
+            text-transform: uppercase;
+        }
+
+        * {
+            font-weight: bold;
+        }
+
+        /*atributos que contenham a palavra CSS*/
+        [title="CSS"] {
+            color: yellowgreen;
+        }
+
+        /*atributos que contenham a palavra Plataforma*/
+        [title~="Plataforma"] {
+            color: black;
+        }
+
+        /*atributos com Pip |*/
+        [title|="Plataforma"] {
+            background: red;
+        }
+
+        [href^="http://"] {
+            background: green;
+        }
+
+        [href*="login"] {
+            background: blue;
+        }
+
+
     </style>
 
 </head>
@@ -35,16 +72,47 @@
 <body>
     <h1 id="titulo">Seletores CSS</h1>
     <p id="texto-explicativo">O CSS possui vários tipos de seletores</p>
-    <div>
+
+    <!-- <div>
         <ul>
-            <li><b>Seletor por Tipo/tag:</b> Busca elementos por uma tag HTML específica</li>
-            <li><b>Seletor por ID (#):</b> Busca elementos pelo atributo ID</li>
+            <li class="seletores texto-maiusculo"><b>Seletor por Tipo/tag:</b> Busca elementos por uma tag HTML específica</li>
+            <li class="seletores texto maiusculo"><b>Seletor por ID (#):</b> Busca elementos pelo atributo ID</li>
             <li><b>Seletor por Classes (.):</b> Busca elementos através do atributo "class"</li>
             <li><b>Seletor Universal (*):</b> Seleciona todos os elementos</li> 
-            <li><b>Seletor por Atributo ([atrib]):</b> Seleciona elementos que possuem um atributo 
+            <li class="texto-maiusculo"><b>Seletor por Atributo ([atrib]):</b> Seleciona elementos que possuem um atributo 
                 específico em nsso documento HTML e conseguimos também buscar atributos com um 
                 valor específico.</li>
 
+        </ul>
+    </div> -->
+
+    <div>
+        <ul>
+            <li>
+                <a title="CSS" href="http://pt.wikipedia.org/wiki/CSS">
+                    WikiPedia CSS
+                </a> <br>
+
+                
+            </li>
+
+            <li>
+                <a title="Netflix Plataforma" href="https://netflix.com/login">
+                    Netflix
+                </a> <br>
+            </li>
+
+            <li>
+                <a title="Github Plataforma" href="htpps://github.com">
+                    Github
+                </a> <br>
+            </li>
+
+            <li>
+                <a>
+                    Discord
+                </a> <br>
+            </li>
         </ul>
     </div>
 </body>
