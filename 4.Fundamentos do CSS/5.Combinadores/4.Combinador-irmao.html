@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores Irmãos</title>
+
+    <style>
+
+        /*Seletor de Combinador Adjacente (+): O seletor div + p é conhecido 
+        como um seletor de combinador adjacente. Ele seleciona todos os elementos <p> 
+        que são imediatamente precedidos por um elemento <div>. Em outras palavras, 
+        ele aplica o estilo apenas aos elementos <p> que vêm logo após um <div> 
+        no mesmo nível hierárquico*/
+        div + p {
+            color: tomato;
+        } 
+
+        .fundo-verde  + p {
+            background: lightgreen;
+        }
+
+        div ~ p {
+            color: tomato;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="fundo-verde">
+        <p>Parágrafo 1 dentro da div</p>
+        <p>Parágrafo 2 dentro da div</p>
+
+        <span>
+            <p>Parágrafo 3 <b>dentro</b> da span</p>
+        </span>
+    </div>
+
+    <p>Parágrafo 4 fora da div</p>
+    <p>Parágrafo 5 fora da div</p>
+
+    <div class="fundo-azul">
+        <p>Parágrafo 6 dentro da div</p>
+        <p>Parágrafo 7 dentro da div</p>
+
+        <span>
+            <p>Parágrafo 8 dentro da span e da div</p>
+        </span>
+    </div>
+
+    <p>Parágrafo 9 fora da div</p>
+    <p>Parágrafo 10 fora da div</p>
+
+    <div class="fundo-amarelo">
+        <p>Parágrafo 11 dentro da div</p>
+        <p>Parágrafo 12 dentro da div</p>
+
+        <span>
+            <p>Parágrafo 13 dentro da span e da div</p>
+        </span>
+    </div>
+    
+</body>
+</html>
