@@ -6,28 +6,21 @@
     <title>Fundos dos Elementos</title>
 
     <style>
-        .img {            
-            width: 300px;
-            height: 150px;     
-            margin-bottom: 30px;       
-            background-position: 30px;
-        }
-        
-        #auto {
-            background-size: auto;
+        div {
+            width: 200px;
+            height: 300px;
+            border: 5px solid black;
         }
 
-        #cover {
-            background-size: cover;
+        img {
+            width: 100%;
+            height: 100%;   
+            object-fit: cover;
+            object-position: left 50% top 50% bottom start 50% end 50% right 50%;         
         }
 
-        #tamanho {
-            background-size: 200px 100px;
-        }
-
-        #repeat-x {
-            background-image: url('https://picsum.photos/200');
-            background-repeat: repeat-x;
+        #background-attachment-fixed {
+            background-attachment: fixed;
         }
     </style>
 
@@ -35,28 +28,12 @@
 
 <body>
 
-    <!-- <code>object-fit auto</code>
+    <code>background-attachment: fixed</code>
     <div>
-        <img src="https://picsum.photos/200" alt="" id="auto">
-    </div>
-    <br> <br>
-
-    <code>object-fit cover</code>
-    <div>
-        <img src="https://picsum.photos/200" alt="" id="cover">
-    </div>
-    <br> <br>
-
-    <code>object-fit tamanho</code>
-    <div>
-        <img src="https://picsum.photos/200"  alt="" id="tamanho">
+        <img src="https://picsum.photos/200" alt="" id="background-attachment-fixed">
     </div>
 
-    <br> <br> -->
-
-    <code>background repeat-x</code>
-    
-        <img src="https://picsum.photos/200"  alt="" id="repeat-x">
+    <br>    
     
 
 </body>
