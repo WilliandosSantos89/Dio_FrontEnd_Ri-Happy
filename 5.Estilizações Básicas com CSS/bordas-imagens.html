@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bordas</title>
+    <title>Bordas com Imagens</title>
 </head>
 
 <style>
@@ -11,17 +11,20 @@
         font-family: Roboto, sans-serif;
     }
 
+    
+
     .exemplo {
         background-color: lightcoral;
         width: 200px;
-        height: 200px;
-        /* border-style: solid;
-        border-width: thick;
-        border-style: solid;
-        border-color: green palegreen black;     */
-        border-bottom: 20px solid green;
-        border-radius: 50%;
+        height: 200px;    
+        border: 50px solid;
+        border-image-source: url('https://picsum.photos/200');        
+    }
 
+    .exemplo2 {
+        background-color: lightcoral;
+        width: 200px;
+        height: 200px;    
     }
 
 
@@ -32,16 +35,20 @@
     <p>Podemos definiar as confirgurações das nossas bordas através das propriedades:</p>
 
     <ul>
-        <li>border-width</li>
-        <li>border-style</li>
-        <li>border-color</li>
+        <li>border-iamge-source</li>
+        <li>border-image-width</li>
+        <li>border-image-repeat</li>
+        <li>border-image-slice</li>
+        <li>border-image-outset</li>
     </ul>
 
     <h2>Exemplo:</h2>
 
-    <div class="exemplo">
+    <div class="exemplo"></div>
 
-    </div>
+    <br> <br>
+
+    <div class = "exemplo2"></div>
     
 </body>
 </html>
